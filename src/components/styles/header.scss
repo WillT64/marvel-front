@@ -65,5 +65,13 @@ header {
 @media (max-width: 450px) {
   header {
     justify-content: center;
+
+    .header--btn:not(:first-child) {
+      margin-left: initial;
+    }
+
+    div {
+      width: auto;
+    }
   }
 }

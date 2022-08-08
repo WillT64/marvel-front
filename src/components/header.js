@@ -6,17 +6,12 @@ import "./styles/header.scss";
 const Header = () => {
   return (
     <header>
-      <div className="header--menu">
-        <div className="header--btn">
-          <Link to="/characters">
-            <button>Personnages</button>
-          </Link>
-        </div>
-        <div className="header--btn">
-          <Link to="/comics">
-            <button>Comics</button>
-          </Link>
-        </div>
+      {/* <div className="header--menu"> */}
+      <div className="header--btn">
+        <Link to="/characters">
+          <button>Personnages</button>
+        </Link>
+        {/* </div> */}
       </div>
       <div className="header--logo">
         <Link to="/">
@@ -24,9 +19,9 @@ const Header = () => {
         </Link>
       </div>
       <div className="header--btn">
-        {/* <Link to="/favourites">
-          <button>Favoris</button>
-        </Link> */}
+        <Link to="/comics">
+          <button>Comics</button>
+        </Link>
       </div>
     </header>
   );
