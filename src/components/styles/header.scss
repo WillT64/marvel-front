@@ -66,4 +66,11 @@ header {
   header {
     justify-content: center;
   }
+
+  .header--btn {
+    width: 40px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }
