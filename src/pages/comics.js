@@ -8,7 +8,6 @@ const Comics = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [showFilter, setShowFilter] = useState(false);
   const [filter, setFilter] = useState({});
-  console.log("~ filter", filter);
 
   useEffect(() => {
     const fetchComics = async () => {
@@ -16,7 +15,6 @@ const Comics = () => {
         const response = await axios.get(
           "https://will-marvel-back.herokuapp.com/comics"
         );
-        console.log(response.data);
         setComics(response.data);
         setIsLoading(false);
       } catch (error) {
@@ -35,7 +33,6 @@ const Comics = () => {
             params: filter,
           }
         );
-        console.log(response.data);
         setComics(response.data);
         setIsLoading(false);
       } catch (error) {

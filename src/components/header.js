@@ -24,9 +24,9 @@ const Header = () => {
         </Link>
       </div>
       <div className="header--btn">
-        <Link to="/favourites">
+        {/* <Link to="/favourites">
           <button>Favoris</button>
-        </Link>
+        </Link> */}
       </div>
     </header>
   );

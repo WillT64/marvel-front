@@ -18,7 +18,6 @@ const Characters = () => {
         const response = await axios.get(
           "https://will-marvel-back.herokuapp.com/characters"
         );
-        console.log(response.data);
         setCharacters(response.data);
         setIsLoading(false);
       } catch (error) {
@@ -38,7 +37,6 @@ const Characters = () => {
             params: filter,
           }
         );
-        console.log(response.data);
         setCharacters(response.data);
         setIsLoading(false);
       } catch (error) {
